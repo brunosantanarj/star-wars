@@ -1,0 +1,42 @@
+{
+  "name": "bff",
+  "version": "0.0.1",
+  "description": "Backend for frontend of project",
+  "author": "Bruno Santana <brunosantanasigma@live.com>",
+  "homepage": "https://github.com/brunosantanarj/star-wars#readme",
+  "license": "ISC",
+  "main": "lib/bff.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunosantanarj/star-wars.git"
+  },
+  "scripts": {
+    "start": "node --inspect=5858 -r ts-node/register ./src/bff.ts",
+    "start:watch": "nodemon",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "bugs": {
+    "url": "https://github.com/brunosantanarj/star-wars/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "koa": "^2.11.0"
+  }
+}

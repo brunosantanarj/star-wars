@@ -1,9 +1,13 @@
 import * as Koa from 'koa';
+import * as bodyParser from 'koa-bodyparser';
+
+import { router } from './routes';
 
 const app = (new Koa);
 
-app.use(async ctx => {
-  ctx.body = 'Koa start'
-});
+app
+  .use(bodyParser())
+  .use(router.routes())
+  .use(router.allowedMethods());
 
 app.listen(3000);

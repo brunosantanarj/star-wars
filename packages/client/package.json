@@ -1,0 +1,40 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Bruno Santana <brunosantanasigma@live.com>",
+  "homepage": "https://github.com/brunosantanarj/star-wars#readme",
+  "license": "ISC",
+  "main": "lib/client.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunosantanarj/star-wars.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "re:build": "bsb -make-world -clean-world",
+    "re:watch": "bsb -make-world -clean-world -w",
+    "dev:client": "moduleserve ./ --port 8000 && yarn re:watch"
+  },
+  "bugs": {
+    "url": "https://github.com/brunosantanarj/star-wars/issues"
+  },
+  "devDependencies": {
+    "bs-platform": "7.2.2",
+    "moduleserve": "^0.9.1"
+  },
+  "dependencies": {
+    "bs-css-emotion": "^1.1.0",
+    "bs-intersection-observer": "^0.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reason-react": "0.7.0"
+  }
+}

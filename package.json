@@ -7,6 +7,6 @@
   "scripts": {
     "postinstall": "lerna bootstrap",
     "lint": "lerna run lint",
-    "server": "lerna run start:watch --parallel"
+    "watch": "lerna run --parallel start:watch"
   }
 }
